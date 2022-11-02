@@ -13,15 +13,9 @@ print(message)
 # Example 1 ----------------------------------------------------
 print("Python is fun.")
 
-a = 5
-# Two objects are passed
-print("a =", a) #sep
 
-b = a
-# Three objects are passed
-print('a =', 508, '= b')
-# Example 2 ----------------------------------------------------
-a = 5
+
+
 print("a =", a, 800, end='\n\n\n', sep='00000')
 print("a =", a, sep='0', end='')
 #
