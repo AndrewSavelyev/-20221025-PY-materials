@@ -22,25 +22,26 @@ string = 'helloworld'
 i = 0
 while i < len(string):
     if i == 0:
-        print(string[i])
+        print(string[i], sep="", end="")
         i += 1
         continue
     elif i == 1:
-        print(string[i])
+        print(string[i], sep="", end="")
         i += 1
         continue
     i += 1
 i = len(string)
 while len(string) > 1:
     if i == 2:
-        print(string[-i])
+        print(string[-i], sep="", end="")
         i -= 1
         continue
     elif i == 1:
-        print(string[-i])
+        print(string[-i], sep="", end="")
         i -= 1
         break
     i -= 1
+
 
 
 
