@@ -18,29 +18,45 @@
 #
 #     Use built-in function len() on an input string
 #     Use positive indexing to get the first characters of a string and negative indexing to get the last characters
-string = 'helloworld'
-i = 0
-while i < len(string):
-    if i == 0:
-        print(string[i], sep="", end="")
-        i += 1
-        continue
-    elif i == 1:
-        print(string[i], sep="", end="")
-        i += 1
-        continue
-    i += 1
-i = len(string)
-while len(string) > 1:
-    if i == 2:
-        print(string[-i], sep="", end="")
-        i -= 1
-        continue
-    elif i == 1:
-        print(string[-i], sep="", end="")
-        i -= 1
-        break
-    i -= 1
+# string = 'helloworld'
+# i = 0
+# while i < len(string):
+#     if i == 0:
+#         print(string[i], sep="", end="")
+#         i += 1
+#         continue
+#     elif i == 1:
+#         print(string[i], sep="", end="")
+#         i += 1
+#         continue
+#     i += 1
+# i = len(string)
+# while len(string) > 1:
+#     if i == 2:
+#         print(string[-i], sep="", end="")
+#         i -= 1
+#         continue
+#     elif i == 1:
+#         print(string[-i], sep="", end="")
+#         i -= 1
+#         break
+#     i -= 1
+
+# string = "my"
+# array = [1, 2]
+# for r in array:
+#     i = 0
+#     while i < len(string):
+#         if i == 0:
+#             print(string[i], sep="", end="")
+#             i += 1
+#             continue
+#         elif i == 1:
+#             print(string[i], sep="", end="")
+#             i += 1
+#             continue
+#         i += 1
+
 
 
 
