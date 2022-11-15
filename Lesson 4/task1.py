@@ -57,6 +57,14 @@
 #             continue
 #         i += 1
 
+string = 'x'
+i = 0
+while i < len(string):
+    if i == 1:
+        print(string[i], sep="", end="")
+        i += 1
+        continue
+    i += 1
 
 
 
