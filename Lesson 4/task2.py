@@ -10,6 +10,9 @@ check = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 for i in range(len(x)):
     if x[i] in check:
         ph += 1
-    else:
-        print("Phone is incorrect")
-
+    # else:
+    #      print("Phone is incorrect")
+if ph == 10 and len(x) <= 10:
+    print("Phone is correct")
+else:
+    print("Phone is incorrect")
