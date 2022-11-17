@@ -4,8 +4,8 @@
 # the stored name even if the given name has another case, e.g., if your input is “Anton” and the stored name is “anton”, it should return True.
 string = "andrew"
 
-print("Enter your name")
-x = input()
+
+x = input("Enter your name: ")
 ph = 0
 for i in range(len(x)):
     if x[i] in string or string.capitalize():
