@@ -17,14 +17,14 @@ print(list_2)
 j = 0
 count = 0
 list_4 = []
-#define first element in list_3
+#define list_4, which is "third list"
 while j < 9:
     if list_1[j] == list_2[j]:
         list_4.insert(j, list_1[j])
         j += 1
     j += 1
-#print(list_4)
-#define all other elements in list_3
+
+#define if exists duplicates in list
 k = 0
 while k < len(list_4):
     if list_4.count(list_4[k]) > 1:
