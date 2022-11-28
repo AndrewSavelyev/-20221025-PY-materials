@@ -7,7 +7,7 @@
 #     the call make_operation(‘+’, 7, 7, 2) should return 16
 #     the call make_operation(‘-’, 5, 5, -10, -20) should return 30
 #     the call make_operation(‘*’, 7, 6) should return 42
-
+# Как работает дебаггер в PyCharm?
 def make_operation(*ar:list):
     #sum = 0
     substruct = 0
@@ -16,8 +16,18 @@ def make_operation(*ar:list):
     count_ar = ar[2:]
     if ar[0] == "+":
        sum = ar[1]
-       for j in count_ar:
+       for j in range(len(count_ar)):
            sum = sum + count_ar[j]
-           print(sum)
+       print(sum)
+    elif ar[0] == "-":
+        substruct = ar[1]
+        for j in range(len(count_ar)):
+            substruct = substruct - count_ar[j]
+        print(substruct)
+    elif ar[0] == "*":
+        multiple = ar[1]
+        for j in range(len(count_ar)):
+            multiple = multiple * count_ar[j]
+        print(multiple)
 
-make_operation('+', 4, 5, 6)
+make_operation('-', 4, 5, 6, 10)
