@@ -9,9 +9,6 @@
 #     the call make_operation(‘*’, 7, 6) should return 42
 # Как работает дебаггер в PyCharm?
 def make_operation(*ar:list):
-    #sum = 0
-    substruct = 0
-    multiple = 0
     ar = [ i for i in ar]
     count_ar = ar[2:]
     if ar[0] == "+":
@@ -30,4 +27,4 @@ def make_operation(*ar:list):
             multiple = multiple * count_ar[j]
         print(multiple)
 
-make_operation('-', 4, 5, 6, 10)
+make_operation('*', 4, 5, 6, 10)
