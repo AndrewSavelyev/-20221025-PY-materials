@@ -8,9 +8,7 @@
 #In this sample i've created module imported_module.py in subdirectory module_test
 #and from there imported variable imported_var
 
-#import sys
 from module_test.imported_module import imported_var
 
-#print(sys.path)
 print(imported_var)
 
