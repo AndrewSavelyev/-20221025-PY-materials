@@ -8,6 +8,7 @@
 #In this sample i've created module imported_module.py in subdirectory module_test
 #and from there imported variable imported_var
 
+
 from module_test.imported_module import imported_var
 
 print(imported_var)
