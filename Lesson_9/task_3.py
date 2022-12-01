@@ -22,3 +22,12 @@
 # Try running your module on itself: e.g., test("mymod.py"). Note that the test opens the file twice; if you’re feeling
 # ambitious, you may be able to improve this by passing an open file object into the two count functions
 # (hint: file.seek(0) is a file rewind).
+
+from mymod_dir.mymod import *
+
+
+def main():
+    test('mymod_dir/lines_and_characters.txt')
+
+if __name__=="__main__":
+    main()

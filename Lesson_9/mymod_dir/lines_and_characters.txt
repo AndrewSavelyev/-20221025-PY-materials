@@ -1,0 +1,3 @@
+Write a program that counts lines and characters in a file (similar to `wc` Unix-utility,
+for additional info about it follow the link: https://www.geeksforgeeks.org/wc-command-linux-examples/
+ or in case you have macOS or Linux - just call manual for this utility via command: `man wc`
