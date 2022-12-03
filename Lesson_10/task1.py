@@ -9,12 +9,16 @@
 #and with commented code in line 16- program will print only two messages:
 # Oops
 # Still oops
-
-list = [1, 6, 79]
+#And finally, to rise KeyError # instead of IndexError we need to modify not just function oops, but also mofify list
+# to dict
+#list = [1, 6, 79]
+dict = {'1': 'fg', '6': '79'}
 def oops():
     try:
-        list[4]
-    except IndexError:
+        #list[4]
+        dict['5']
+    #except IndexError:
+    except KeyError:
         print('Oops')
 
 def call_oops():
