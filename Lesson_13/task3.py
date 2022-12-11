@@ -14,21 +14,22 @@
 # assert choose_func(nums1, square_nums, remove_negatives) == [1, 4, 9, 16, 25]
 # assert choose_func(nums2, square_nums, remove_negatives) == [1, 3, 5]
 
-nums1 = [1, -2, 3, -4, 5]
+#nums1 = [1, 2, 3, 7, 4, 5]
+nums1 = [-1, -2, 3, 7, -4, 5]
 
 def square_nums(nums1):
-    fin_num = [lambda it: it**2 for it in nums1]
+    fin_num = [it**2 for it in nums1]
     return print(fin_num)
 
 def remove_negatives(nums1):
-    fin_neg = [lambda it: it > 0 for it in nums1 ]
+    fin_neg = [it for it in nums1 if it > 0]
     return print(fin_neg)
 
-def choose_func(nums1: list, square_nums, remove_negatives):
-    list2 = [lambda it: it > 0 in nums1]
+def choose_func(nums1: list):
+    list2 = [it for it in nums1 if it > 0]
     if len(list2) == len(nums1):
-        return square_nums([list2])
+        return square_nums(list2)
     else:
-        return remove_negatives([list2])
+        return remove_negatives(list2)
 
-choose_func(nums1, square_nums([nums1]), remove_negatives([nums1]))
+choose_func(nums1)
